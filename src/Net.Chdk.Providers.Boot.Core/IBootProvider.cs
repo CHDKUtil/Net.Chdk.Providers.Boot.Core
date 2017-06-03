@@ -8,6 +8,7 @@ namespace Net.Chdk.Providers.Boot
         int[][] Offsets { get; }
         byte[] Prefix { get; }
 
+        uint GetBlockSize(string fileSystem);
         IDictionary<int, byte[]> GetBytes(string fileSystem);
     }
 }
