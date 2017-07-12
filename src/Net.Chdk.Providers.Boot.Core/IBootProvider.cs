@@ -4,11 +4,10 @@ namespace Net.Chdk.Providers.Boot
 {
     public interface IBootProvider
     {
-        string FileName { get; }
-        int[][] Offsets { get; }
-        byte[] Prefix { get; }
-
-        uint GetBlockSize(string fileSystem);
-        IDictionary<int, byte[]> GetBytes(string fileSystem);
+        string GetFileName(string categoryName);
+        int[][] GetOffsets(string categoryName);
+        byte[] GetPrefix(string categoryName);
+        uint GetBlockSize(string categoryName, string fileSystem);
+        IDictionary<int, byte[]> GetBytes(string categoryName, string fileSystem);
     }
 }

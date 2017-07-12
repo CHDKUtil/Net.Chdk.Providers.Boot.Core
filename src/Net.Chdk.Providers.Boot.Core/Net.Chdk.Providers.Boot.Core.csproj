@@ -60,7 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IBootProvider.cs" />
-    <Compile Include="IBootProviderResolver.cs" />
     <Compile Include="IScriptProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
